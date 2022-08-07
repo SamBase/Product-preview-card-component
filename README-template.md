@@ -61,27 +61,30 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+Using diffrent images based on display using HTML
+```HTML
+<picture class="product-image">   
+  <source
+    srcset="./images/image-product-desktop.jpg"
+    media="(min-width: 375px)"
+  />
+  <source
+    srcset="./images/image-product-mobile.jpg"
+    media="(min-width: 1px)"
+  />
+  <img src="./images/image-product-desktop.jpg" alt="perfume" srcset="" class="view">
+</picture>
 ```
+
+To remove the unexpected gap at the bottom of the image using these rules
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.view{
+  ...
+  display: block;
+  margin: auto;
+  ...
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
