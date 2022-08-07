@@ -35,6 +35,7 @@ Users should be able to:
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-page-using-html-tag-1TsHWcwJPT)
 - Live Site URL: [Add live site URL here](https://sambase.github.io/Product-preview-card-component/)
 
+
 ## My process
 
 ### Built with
