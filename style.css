@@ -31,19 +31,19 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "image info";
     margin-top: 20vh;
-    /* column-gap: 1em; */
-    border-radius: 1em;
+    border-radius: 0.5em;
 }
 
 .product-image{
-    grid-area: image;
-
-    /* background: url("./images/image-product-desktop.jpg"); */
+    grid-area: image;    
     
 }
 .view{
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 0.5em 0em 0em 0.5em;
 }
 
 .product{
