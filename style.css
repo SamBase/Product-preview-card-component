@@ -21,6 +21,8 @@ body {
     /* font-family: 'Fraunces', serif; */
     font-family: 'Montserrat', sans-serif;
     display: grid;
+    height: 100vh;
+    align-items: end;
 }
 
 .card{
@@ -30,7 +32,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "image info";
-    margin-top: 20vh;
     border-radius: 0.5em;
 }
 
