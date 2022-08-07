@@ -120,19 +120,37 @@ body {
     background-color: var(--very-dark-cyan);
 }
 
-.product-buy-button button img{
-
-}
-
 .product-buy-button button p{
     color: var(--white);
     font-weight: 700;
     margin-left: 1em;
 }
 @media (max-width: 375px) {
+    body{
+        grid-template-rows: auto auto;
+        align-items: end;
+        height: 100vh;
+
+    }
+
     .card{
         grid-template-rows: auto 1.5fr;
+        grid-template-columns: 1fr;
         grid-template-areas: "image"
             "info";
+        
+        width: 90vw;
+        margin-top: -20vh;
+    }
+
+    .product{
+        margin: 0.5em 1em;
+        grid-template-rows: repeat(5,auto);
+        row-gap: 1em;
+        margin: 1.5em 1.5em;
+    }
+
+    .view{
+        border-radius: 0.5em 0.5em 0em 0em;
     }
 }
